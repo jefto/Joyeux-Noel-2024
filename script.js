@@ -12,6 +12,11 @@ document.addEventListener('DOMContentLoaded', () => {
     backgroundMusic.play();
 });
 
+document.addEventListener('mousemove', () => {
+    if (backgroundMusic.paused) {
+        backgroundMusic.play();
+    }
+});
 
 formButton.addEventListener('click', () => {
     if (snowing) {
