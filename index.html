@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyeux Noël 2024</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form id="userForm">
+            <div class="nameDiv">
+                <label for="userName">Entrez votre nom:</label>
+                <input type="text" id="userName" name="userName" required>
+            </div>
+            <div class="photoDiv">
+                <label for="userPhoto">Téléchargez votre photo:</label>
+                <input type="file" id="userPhoto" name="userPhoto" accept="image/*" required>
+            </div>
+            
+            <button type="submit" id="formSend">Envoyer</button>
+        </form>
+        <button id="snowButton">Faire neiger</button>
+        <div id="snowflakes"></div>
+        <div id="snowLayerContainer"></div>
+        <audio id="backgroundMusic" loop>
+            <source src="sound/noel_song.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="backgroundMusic2" loop>
+            <source src="sound/VOXMale_Pere noel oh oh oh 4 (ID 2077)_LS.mp3" type="audio/mpeg">
+        </audio>
+        <div id="personalizedMessage"></div>
+    </div>
+    <footer>
+        @2024 - Joyeux Noël created by JEFTO2.0
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
