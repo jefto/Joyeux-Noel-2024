@@ -50,22 +50,21 @@ document.getElementById('userForm').addEventListener('submit', (event) => {
     reader.onload = function(e) {
         const photoURL = e.target.result;
         const personalizedMessage = `
-            <h2 style="
-                    font-size: 50px;
-                    font-weight: bold; 
-                    margin-bottom: 1em;"
-            >
-                    🎅 Joyeux Noël , 🎅
-                    <br>
-                    🎅 ${userName}! 🎅
-            </h2>
-            <img src="${photoURL}" alt="Photo de ${userName}" 
-                style="
-                    width: 300px; 
-                    height: 300px;
-                    border-radius: 100%;
-                "
-            >
+            <div class="dynamic-container">
+                <h2 class="dynamic-title">
+                    🎅 Joyeux Noël 🎅
+                </h2>
+                <h3 class="dynamic-subtitle">
+                    🔔 ${userName}! 🔔
+                </h3>
+                <img src="${photoURL}" alt="Photo de ${userName}" 
+                    style="
+                        width: 300px; 
+                        height: 300px;
+                        border-radius: 100%;
+                    "
+                >
+            </div>
         `;
         document.getElementById('personalizedMessage').innerHTML = personalizedMessage;
        // backgroundMusic.pause();
